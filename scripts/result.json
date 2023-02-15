@@ -1,0 +1,19 @@
+{
+    "id": "cmpl-6kDqotlNHAM8mLZ3GreYyR1dtkGvw",
+    "object": "text_completion",
+    "created": 1676474350,
+    "model": "text-davinci-003",
+    "choices": [
+        {
+            "text": "\n\nconst fs = require('fs');\n\nconst fileExists = (filePath) => {\n  try {\n    fs.statSync(filePath);\n    return true;\n  } catch (err) {\n    if (err.code === 'ENOENT') return false;\n  }\n};\n\nmodule.exports = fileExists;",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 11,
+        "completion_tokens": 81,
+        "total_tokens": 92
+    }
+}
